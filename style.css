@@ -129,13 +129,14 @@ table {
 }
 
 /* ////////////////////////////////////////////////// */
-
+body {
+	font-family: "Roboto", sans-serif;
+}
 .container {
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
 	height: 100vh;
-	font-family: "Roboto", sans-serif;
 }
 
 h1 {
@@ -148,8 +149,14 @@ h1 {
 }
 
 .content {
+	box-sizing: border-box;
+	padding: 50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 250px);
+	grid-template-rows: repeat(auto-fill, 320px);
 	height: 80%;
 	background-color: #19a7ce;
+	gap: 50px;
 }
 
 .footer {
@@ -176,4 +183,64 @@ h1 {
 	border: 2px solid black;
 	font-size: 1.6rem;
 	font-weight: bold;
+}
+
+.example {
+	padding: 15px;
+	box-sizing: border-box;
+	background-color: #fdf4f5;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.3rem;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.example button {
+	align-self: stretch;
+	height: 45px;
+	border: 2px solid black;
+}
+
+.read {
+	background-color: #4ade80;
+}
+
+.pop-up {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.3);
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.add-book form {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	align-items: center;
+	gap: 15px;
+	padding: 15px;
+}
+.add-book input {
+	height: 20px;
+}
+h2 {
+	font-size: 1.5rem;
+	font-size: bold;
+}
+
+.submit {
+	align-self: stretch;
+	height: 30px;
+}
+
+.hidden {
+	visibility: hidden;
 }
