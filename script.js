@@ -20,5 +20,5 @@ addButton.addEventListener("click", () => {
 });
 
 submitButton.addEventListener("click", () => {
-	toggleForm.clistList.add("hidden");
+	toggleForm.classList.add("hidden");
 });
